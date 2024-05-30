@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'kvadratai'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['kvadratai:8080']
